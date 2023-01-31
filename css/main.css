@@ -1,0 +1,221 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap');
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  
+}
+
+::-moz-selection {
+  background: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #fff;
+  text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ----------------------------------------------------------------------------
+                                 Main Layout - Mobile
+  -----------------------------------------------------------------------------*/
+#main-container {
+  z-index: 0;
+  padding: 20px 0px;
+  margin: 0 20px;
+}
+
+.section-container {
+  padding: 60px 0;
+}
+
+/* ----------------------------------------------------------------------------
+                                 Typography 
+  -----------------------------------------------------------------------------*/
+
+/* HEADER */
+#header {
+  background: #8d0622;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  top: 0;
+}
+
+.header-elements {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+/* The Menu Button */
+.menu-button {
+  font-size: 30px;
+  color: #fefdfe;
+}
+
+/* Header - Contacts Icons */
+.header-elements li {
+  float: left;
+  list-style: none;
+  padding: 0 7px;
+}
+
+.header-elements li a {
+  color: #fefdfe;
+}
+
+/* Header Nav Menu Overlay */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* The Menu Overlay */
+.menu-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.98) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+  overflow-x: hidden;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-overlay a {
+  padding: 15px;
+  text-decoration: none;
+  color: #fefdfe;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.3s;
+  font-weight: 200;
+}
+
+.menu-overlay a:hover,
+.menu-overlay a:focus {
+  background-color: #fefdfe;
+  color: #30C7D5;
+}
+
+.menu-overlay .closebtn {
+  position: absolute;
+  right: 5px;
+  font-size: 30px;
+}
+
+/* ABOUT SECTION */
+#about {
+  position: relative;
+  border-bottom: 1.5px solid #8d0622;
+}
+
+#profile-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  top: 5px;
+}
+
+.about-buttons-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.button {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+  width: 250px;
+}
+
+.button:hover,
+.button:focus {
+  background: #fefdfe;
+  transform: scale(1.2);
+  color: #30C7D5;
+}
+
+.button i {
+  padding-left: 5px;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #8d0622;
+  box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* ==========================================================================
+                              MEDIA QUERIES STYLE
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
