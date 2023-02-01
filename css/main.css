@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
-  
 }
 
 ::-moz-selection {
@@ -59,6 +58,9 @@ textarea {
 /* ----------------------------------------------------------------------------
                                  Typography 
   -----------------------------------------------------------------------------*/
+li {
+  list-style: none;
+}
 
 /* HEADER */
 #header {
@@ -87,7 +89,6 @@ textarea {
 /* Header - Contacts Icons */
 .header-elements li {
   float: left;
-  list-style: none;
   padding: 0 7px;
 }
 
@@ -199,18 +200,52 @@ textarea {
   padding-left: 5px;
 }
 
+/* SKILLS SECTION */
+#skills {
+  border-bottom: 1.5px solid #8d0622;
+}
+
+.skill-list-div ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.skill-list-div ul li {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* PORTFOLIO */
+.projects-container ol {
+  padding: 0;
+}
+
+.projects-container ol li {
+  padding: 10px 0;
+}
+
+.projects-container img {
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
 /* FOOTER */
 #footer {
   background-color: #8d0622;
   box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.6);
-  text-align: center;
   color: #fff;
+  text-align: center;
   font-style: italic;
   padding: 5px;
   width: 100%;
   position: fixed;
   bottom: 0;
 }
+
+
 
 /* ==========================================================================
                               MEDIA QUERIES STYLE
