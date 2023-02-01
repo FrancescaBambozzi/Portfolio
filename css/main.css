@@ -96,7 +96,7 @@ li {
   color: #fefdfe;
 }
 
-/* Header Nav Menu Overlay */
+/* Nav Menu Overlay */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -307,6 +307,34 @@ li {
   text-transform: lowercase;
   font-style: italic;
   color: #000;
+}
+
+/* -------  CONTACTS SECTION ---------*/
+.contacts-container {
+  border-top: 1.5px solid #8d0622;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts ul {
+  padding: 0;
+}
+
+#contact ul li {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+#contact ul li a {
+  color: #000;
+  text-transform: lowercase;
+}
+
+#contact ul li a i {
+  padding-right: 3px;
 }
 
 /* FOOTER */
