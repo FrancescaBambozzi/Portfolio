@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
 
 html {
   color: #222;
@@ -142,7 +142,7 @@ li {
 .menu-overlay a:hover,
 .menu-overlay a:focus {
   background-color: #fefdfe;
-  color: #30C7D5;
+  color: #30c7d5;
 }
 
 .menu-overlay .closebtn {
@@ -193,7 +193,7 @@ li {
 .button:focus {
   background: #fefdfe;
   transform: scale(1.2);
-  color: #30C7D5;
+  color: #30c7d5;
 }
 
 .button i {
@@ -232,6 +232,83 @@ li {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
 }
 
+/* -------  EDUCATION SECTION ---------*/
+.education-div {
+  /* text-align: left;
+  width: 95%; */
+}
+
+.year {
+  font-family: "Righteous", cursive;
+  font-size: 45px;
+  position: relative;
+  top: 30px;
+  color: #8d0622;
+  margin: 0;
+}
+
+.workPlace {
+  background-color: #ede7e9;
+  box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: #8d0622;
+  font-size: 18px;
+}
+
+.workPosition {
+  font-size: 20px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+}
+
+.work-points {
+  list-style: disc;
+}
+
+/* -------  EXPERIENCE SECTION ---------*/
+.experience-div {
+  display: block;
+  padding: 15px;
+}
+
+#first {
+  border-left: 1.5px solid #8d0622;
+  border-bottom: 1.5px solid #8d0622;
+  border-top: 1.5px solid #8d0622;
+}
+
+#second,
+#fourth {
+  border-right: 1.5px solid #8d0622;
+  border-bottom: 1.5px solid #8d0622;
+}
+
+#third {
+  border-left: 1.5px solid #8d0622;
+  border-bottom: 1.5px solid #8d0622;
+}
+
+#experience .date {
+  color: #8d0622;
+  float: right;
+  margin-top: -10px;
+  font-weight: 400;
+}
+
+.workDescription {
+  color: #000;
+  padding-top: 30px;
+}
+
+.workDescription a {
+  text-transform: lowercase;
+  font-style: italic;
+  color: #000;
+}
+
 /* FOOTER */
 #footer {
   background-color: #8d0622;
@@ -244,8 +321,6 @@ li {
   position: fixed;
   bottom: 0;
 }
-
-
 
 /* ==========================================================================
                               MEDIA QUERIES STYLE
