@@ -262,18 +262,47 @@ li {
 	color: #30c7d5;
 	grid-column: 1;
 	grid-row: span 2;
-	margin: 0 0 -0.4em -0.25em;
+	margin: 0 0 -0.9em -0.22em;
+  margin-top: 0.35em;
   padding: 10px;
+}
+
+/* Make the project zoom on hover */
+.projects-container li:hover,
+.projects-container li:focus {
+  box-shadow: 8px 8px 5px rgba(14, 13, 13, 0.5);
+  transform: scale(1);
 }
 
 .projects-container li span {
 	grid-column: 2;
+  text-align: center;
 }
 
 .projects-container li span:first-of-type {
 	font-size: 1.5em;
 	padding-top: 1rem;
-  text-align: center;
+}
+
+.projects-container li span:last-of-type {
+	font-style: italic;
+	padding-bottom: 1rem;
+}
+
+.projects-container li span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.projects-container li span a:hover,
+.projects-container li span a:focus {
+  font-size: 1.2em;
+  transition: all 100ms;
+  color: #30c7d5;
+}
+
+.project-icon {
+  margin-left: 3px;
 }
 
 /* -------  EDUCATION SECTION ---------*/
@@ -379,7 +408,7 @@ li {
 
 /* FOOTER */
 #footer {
-  background-color: #8d0622;
+  background: #8d0622;
   box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.6);
   color: #fff;
   text-align: center;
