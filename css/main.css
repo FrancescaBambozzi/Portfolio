@@ -220,24 +220,63 @@ li {
 
 /* PORTFOLIO */
 .projects-container ol {
-  padding: 0;
+	padding: 0.5rem;
+	columns: 30rem;
+	column-gap: 2rem;
+	/* column-rule: 0.2rem dotted #30c7d5; */
 }
 
-.projects-container ol li {
-  padding: 10px 0;
+.projects-container li {
+	--y: calc(100% - 2rem);
+	display: grid;
+	grid-template-columns: minmax(3.75em, auto) 1fr;
+	gap: 0 0.5em;
+	break-inside: avoid;
+  page-break-inside: avoid;
+	background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+	color: #fff;
+	overflow: hidden;
+	box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17);
+  margin-top: 1rem;
 }
 
-.projects-container img {
+.projects-container li img {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	aspect-ratio: 1.8;
+	object-fit: cover;
   width: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+.projects-container li::before {
+	counter-increment: list-item +1;
+	content: counter(list-item);
+	font-weight: 700;
+	font-size: 4.5em;
+	letter-spacing: -0.125em;
+	line-height: 1;
+	color: #30c7d5;
+	grid-column: 1;
+	grid-row: span 2;
+	margin: 0 0 -0.4em -0.25em;
+  padding: 10px;
+}
+
+.projects-container li span {
+	grid-column: 2;
+}
+
+.projects-container li span:first-of-type {
+	font-size: 1.5em;
+	padding-top: 1rem;
+  text-align: center;
 }
 
 /* -------  EDUCATION SECTION ---------*/
-.education-div {
-  /* text-align: left;
-  width: 95%; */
-}
-
 .year {
   font-family: "Righteous", cursive;
   font-size: 45px;
@@ -331,6 +370,7 @@ li {
 #contact ul li a {
   color: #000;
   text-transform: lowercase;
+  text-decoration: none;
 }
 
 #contact ul li a i {
