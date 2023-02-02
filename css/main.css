@@ -1,6 +1,3 @@
-/* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
-
 html {
   color: #222;
   font-size: 1em;
@@ -46,31 +43,30 @@ textarea {
                                  Typography 
   -----------------------------------------------------------------------------*/
 h1 {
-  font-family: "Righteous", cursive;
-  font-weight: 800;
-  font-size: 45px;
-  text-transform: uppercase;
   color: #000;
+  font-family: "Righteous", cursive;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 h1 span {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
   color: #8d0622;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 h2 {
+  color: #000;
   font-family: "Righteous", cursive;
   font-size: 40px;
   font-weight: 700;
-  color: #000;
   text-align: center;
 }
 
-#education h4 a,
-#experience h4 a {
+h4 {
   font-weight: 500;
 }
 
@@ -84,17 +80,17 @@ li {
 
 a {
   font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
   font-weight: 300;
+  text-decoration: none;
 }
 
 /* ----------------------------------------------------------------------------
                                  Main Layout - Mobile
   -----------------------------------------------------------------------------*/
 #main-container {
-  z-index: 0;
-  padding: 20px 0px;
   margin: 0 20px;
+  padding: 20px 0;
+  z-index: 0;
 }
 
 .section-container {
@@ -104,25 +100,25 @@ a {
 /* HEADER */
 #header {
   background: #8d0622;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  position: fixed;
   top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header-elements {
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
   padding: 5px 15px;
 }
 
 /* The Menu Button */
 .menu-button {
-  font-size: 30px;
   color: #fefdfe;
+  font-size: 30px;
 }
 
 /* Header - Contacts Icons */
@@ -137,44 +133,44 @@ a {
 
 /* Nav Menu Overlay */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky { 
+.sticky {
   position: fixed;
   top: 0;
 }
 
 /* The Menu Overlay */
 .menu-overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
   background: linear-gradient(
     109.6deg,
     rgba(0, 0, 0, 0.98) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
-  overflow-x: hidden;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
   transition: 0.5s;
+  width: 0;
+  z-index: 1;
 }
 
 .overlay-content {
+  margin-top: 30px;
   position: relative;
+  text-align: center;
   top: 20%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
 }
 
 .menu-overlay a {
-  padding: 15px;
   color: #fefdfe;
-  text-transform: uppercase;
   display: block;
-  transition: 0.3s;
   font-weight: 200;
+  padding: 15px;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .menu-overlay a:hover,
@@ -184,53 +180,53 @@ a {
 }
 
 .menu-overlay .closebtn {
+  font-size: 30px;
   position: absolute;
   right: 5px;
-  font-size: 30px;
 }
 
 /* ABOUT SECTION */
 #about {
-  position: relative;
   border-bottom: 1.5px solid #8d0622;
+  position: relative;
 }
 
 #profile-pic {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  z-index: -1;
   opacity: 0.2;
+  position: absolute;
   top: 5px;
+  width: 100%;
+  z-index: -1;
 }
 
 .about-buttons-container {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: 40px;
 }
 
 .button {
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
   background: linear-gradient(
     109.6deg,
     rgba(0, 0, 0, 0.93) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
   width: 250px;
 }
 
 .button:hover,
 .button:focus {
   background: #fefdfe;
-  transform: scale(1.2);
   color: #30c7d5;
+  transform: scale(1.2);
 }
 
 .button i {
@@ -243,62 +239,58 @@ a {
 }
 
 .skill-list-div ul {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
   padding: 0;
 }
 
 .skill-list-div ul li {
-  text-transform: uppercase;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 /* PORTFOLIO */
 .projects-container ol {
-  padding: 0.5rem;
-  columns: 30rem;
   column-gap: 2rem;
+  columns: 30rem;
   counter-reset: project-counter;
+  padding: 0.5rem;
 }
 
 .projects-container li {
-  counter-increment: project-counter;
-  --y: calc(100% - 2rem);
-  display: grid;
-  grid-template-columns: minmax(3.75em, auto) 1fr;
-  gap: 0 0.5em;
-  break-inside: avoid;
-  page-break-inside: avoid;
   background: linear-gradient(
     109.6deg,
     rgba(0, 0, 0, 0.93) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  break-inside: avoid;
   color: #fff;
-  overflow: hidden;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17);
+  counter-increment: project-counter;
+  display: grid;
+  grid-template-columns: minmax(3.75em, auto) 1fr;
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 .projects-container li img {
   grid-column: 1 / 3;
   grid-row: 1;
-  aspect-ratio: 1.8;
   object-fit: cover;
   width: 100%;
 }
 
 .projects-container li::before {
   content: counter(project-counter);
+  color: #30c7d5;
   font-weight: 700;
   font-size: 4.5em;
-  letter-spacing: -0.125em;
-  line-height: 1;
-  color: #30c7d5;
   grid-column: 1;
   grid-row: span 2;
+  letter-spacing: -0.125em;
+  line-height: 1;
   margin: 0 0 -0.9em -0.22em;
   margin-top: 0.35em;
   padding: 10px;
@@ -332,9 +324,9 @@ a {
 
 .projects-container li span a:hover,
 .projects-container li span a:focus {
+  color: #30c7d5;
   font-size: 1.2em;
   transition: all 100ms;
-  color: #30c7d5;
 }
 
 .project-icon {
@@ -347,27 +339,27 @@ a {
 }
 
 .year {
+  color: #8d0622;
   font-family: "Righteous", cursive;
   font-size: 45px;
+  margin: 0;
   position: relative;
   top: 30px;
-  color: #8d0622;
-  margin: 0;
 }
 
 .workPlace {
   background-color: #ede7e9;
   box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.8);
-  padding: 10px;
   color: #8d0622;
   font-size: 18px;
+  padding: 10px;
 }
 
 .workPosition {
-  font-size: 20px;
   color: #000;
-  text-decoration: underline;
+  font-size: 20px;
   font-weight: 500;
+  text-decoration: underline;
   text-transform: uppercase;
   text-underline-offset: 3px;
 }
@@ -378,8 +370,8 @@ a {
 
 /* -------  EXPERIENCE SECTION ---------*/
 #experience {
-  padding-top: 0;
   margin-bottom: 60px;
+  padding-top: 0;
 }
 
 .experience-div {
@@ -388,27 +380,27 @@ a {
 }
 
 #first {
-  border-left: 1.5px solid #8d0622;
   border-bottom: 1.5px solid #8d0622;
+  border-left: 1.5px solid #8d0622;
   border-top: 1.5px solid #8d0622;
 }
 
 #second,
 #fourth {
-  border-right: 1.5px solid #8d0622;
   border-bottom: 1.5px solid #8d0622;
+  border-right: 1.5px solid #8d0622;
 }
 
 #third {
-  border-left: 1.5px solid #8d0622;
   border-bottom: 1.5px solid #8d0622;
+  border-left: 1.5px solid #8d0622;
 }
 
 #experience .date {
   color: #8d0622;
   float: right;
-  margin-top: -10px;
   font-weight: 400;
+  margin-top: -10px;
 }
 
 .workDescription {
@@ -417,18 +409,18 @@ a {
 }
 
 .workDescription a {
-  text-transform: lowercase;
-  font-style: italic;
   color: #000;
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 /* -------  CONTACTS SECTION ---------*/
 .contacts-container {
+  align-items: center;
   border-top: 1.5px solid #8d0622;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .contacts ul {
@@ -436,15 +428,15 @@ a {
 }
 
 #contact ul li {
-  list-style: none;
   float: left;
+  list-style: none;
   padding: 5px;
 }
 
 #contact ul li a {
   color: #000;
-  text-transform: lowercase;
   font-weight: 500;
+  text-transform: lowercase;
 }
 
 #contact ul li a i {
@@ -454,14 +446,14 @@ a {
 /* FOOTER */
 #footer {
   background: #8d0622;
+  bottom: 0;
   box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.6);
   color: #fff;
-  text-align: center;
   font-style: italic;
   padding: 5px;
-  width: 100%;
   position: fixed;
-  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -471,9 +463,9 @@ a {
 @media only screen and (min-width: 1050px) {
   /* ABOUT SECTION */
   #about {
-    width: 70%;
-    float: left;
     border-right: 1.5px solid #8d0622;
+    float: left;
+    width: 70%;
   }
 
   #about p {
@@ -482,20 +474,20 @@ a {
 
   /* SKILLS SECTION */
   #skills {
-    width: 29%;
-    position: absolute;
-    top: 39%;
-    right: 20px;
     border: none;
+    position: absolute;
+    right: 20px;
+    top: 39%;
+    width: 29%;
   }
 
   /* CONTACTS SECTION */
 
   #contact {
-    width: 30%;
     position: absolute;
-    top: 0;
     right: 20px;
+    top: 0;
+    width: 30%;
   }
 
   .contacts-container {
@@ -513,18 +505,18 @@ a {
 
   /* PORTFOLIO SECTION */
   #portfolio {
+    left: 10%;
     position: absolute;
     top: 80%;
-    left: 10%;
     width: 80%;
   }
 
   /* EXPERIENCES SECTION */
   .main-experiences {
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
   }
 
   #experience {
