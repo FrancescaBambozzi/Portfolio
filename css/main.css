@@ -285,14 +285,15 @@ a {
 .projects-container li::before {
   content: counter(project-counter);
   color: #30c7d5;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 4.5em;
+  font-size: 5em;
   grid-column: 1;
   grid-row: span 2;
   letter-spacing: -0.125em;
   line-height: 1;
   margin: 0 0 -0.9em -0.22em;
-  margin-top: 0.35em;
+  margin-top: 0.15em;
   padding: 10px;
 }
 
