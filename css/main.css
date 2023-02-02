@@ -76,7 +76,6 @@ h2 {
 
 p {
   font-family: "Source Sans Pro", sans-serif;
-  /* font-size: 16px; */
 }
 
 li {
@@ -138,7 +137,7 @@ a {
 
 /* Nav Menu Overlay */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
+.sticky { 
   position: fixed;
   top: 0;
 }
@@ -262,7 +261,6 @@ a {
   columns: 30rem;
   column-gap: 2rem;
   counter-reset: project-counter;
-  /* column-rule: 0.2rem dotted #30c7d5; */
 }
 
 .projects-container li {
@@ -470,6 +468,70 @@ a {
                               MEDIA QUERIES STYLE
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 1050px) {
+  /* ABOUT SECTION */
+  #about {
+    width: 70%;
+    float: left;
+    border-right: 1.5px solid #8d0622;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  /* SKILLS SECTION */
+  #skills {
+    width: 29%;
+    position: absolute;
+    top: 39%;
+    right: 20px;
+    border: none;
+  }
+
+  /* CONTACTS SECTION */
+
+  #contact {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .contacts-container {
+    border: none;
+  }
+
+  .contacts-container ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  #contact .icons li a i {
+    display: none;
+  }
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 80%;
+  }
+
+  /* EXPERIENCES SECTION */
+  .main-experiences {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #experience {
+    width: 90%;
+  }
+
+  #education {
+    width: 90%;
+  }
 }
