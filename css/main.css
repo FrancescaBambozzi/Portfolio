@@ -479,6 +479,7 @@ a {
     right: 20px;
     top: 0;
     width: 30%;
+    padding-bottom: 0;
   }
 
   .contacts-container {
@@ -502,14 +503,14 @@ a {
     top: 39%;
     width: 29%;
     border-top: 1.5px solid #8d0622;
+    /* padding-top: 0; */
   }
-
 
   /* PORTFOLIO SECTION */
   #portfolio {
     left: 10%;
     position: absolute;
-    top: 80%;
+    top: 70%;
     width: 80%;
   }
 
