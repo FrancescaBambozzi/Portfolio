@@ -82,6 +82,7 @@ h5 {
 p {
   color: #000;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
 }
 
 li {
@@ -304,8 +305,8 @@ a {
 }
 
 .card-body p {
-  font-size: 13px;
   margin: 0 0 40px;
+  text-transform: none;
 }
 
 .links-container {
@@ -456,40 +457,27 @@ a {
 @media only screen and (min-width: 1050px) {
   /* ABOUT SECTION */
   #about {
-    /* border-right: 1.5px solid #8d0622; */
-    /* float: left;
-    width: 70%; */
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
   }
 
-  #about p {
-    width: 80%;
+  #about .intro-container {
+    max-width: 760px;
   }
 
-  /* CONTACTS SECTION */
-  #contact {
-    /* position: absolute;
-    right: 20px;
-    top: 0;
-    width: 30%;
-    padding-bottom: 0; */
+  #profile-pic {
+    width: 350px;
   }
 
-  .contacts-container {
-    border: none;
-  }
-
-  .contacts-container ul {
+  /* PORTFOLIO */
+  #portfolio {
+    align-items: center;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
   }
-
-  #contact .icons li a i {
-    display: none;
-  }
-
-  /* SKILLS SECTION */
-  #skills {
-    border-bottom: 1.5px solid #8d0622;
+  .projects-container {
+    max-width: 70%;
   }
 
   /* EXPERIENCES SECTION */
@@ -500,11 +488,19 @@ a {
     justify-content: center;
   }
 
-  #experience {
-    width: 90%;
+  /* .education-div {
+    padding: 50px 100px;
+  }
+
+  .experience-div {
+    padding: 50px 100px;
+  } */
+
+  /* #experience {
+    max-width: 90%;
   }
 
   #education {
-    width: 90%;
-  }
+    max-width: 90%;
+  } */
 }
