@@ -209,7 +209,7 @@ a {
 #profile-pic {
   height: 100%;
   margin-top: 60px;
-  width: 95%;
+  width: 350px;
 }
 
 .about-buttons-container {
@@ -462,10 +462,6 @@ a {
 
   #about .intro-container {
     max-width: 760px;
-  }
-
-  #profile-pic {
-    width: 350px;
   }
 
   /* PORTFOLIO */
