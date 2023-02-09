@@ -452,9 +452,8 @@ a {
 
 /* ==========================================================================
                               MEDIA QUERIES STYLE
-   ========================================================================== */
-
-@media only screen and (min-width: 1050px) {
+   /* ========================================================================== */
+@media only screen and (min-width: 768px) {
   /* ABOUT SECTION */
   #about {
     flex-flow: row-reverse;
@@ -477,10 +476,6 @@ a {
     justify-content: center;
   }
 
-  .projects-container {
-    max-width: 70%;
-  }
-
   /* EXPERIENCES SECTION */
   .main-experiences {
     align-items: center;
@@ -496,8 +491,11 @@ a {
     justify-content: center;
   }
 
+  .education-div {
+    padding: 0 60px;
+  }
+
   .experience-div {
-    width: 70%;
-    padding: 50px 150px;
+    width: 90%;
   }
 }
