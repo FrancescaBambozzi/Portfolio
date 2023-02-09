@@ -75,11 +75,13 @@ h4 {
 }
 
 h5 {
+  color: #000;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
 }
 
 p {
+  color: #000;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -269,17 +271,20 @@ a {
 }
 
 .card {
-  margin: 10px;
   background-color: #fff;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   overflow: hidden;
   width: 300px;
+}
+
+.card span {
+  color: #000;
 }
 
 .card-header img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
 }
 
 .card-body {
@@ -296,7 +301,7 @@ a {
   margin: 0 0 40px;
 }
 
-.links-container a {
+.links-container .project-link {
   background: linear-gradient(
     109.6deg,
     rgba(0, 0, 0, 0.93) 11.2%,
@@ -439,7 +444,7 @@ a {
 @media only screen and (min-width: 1050px) {
   /* ABOUT SECTION */
   #about {
-    border-right: 1.5px solid #8d0622;
+    /* border-right: 1.5px solid #8d0622; */
     /* float: left;
     width: 70%; */
   }
