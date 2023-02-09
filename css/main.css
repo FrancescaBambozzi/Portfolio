@@ -208,7 +208,6 @@ a {
   height: 100%;
   top: 85px;
   width: 95%;
-  float: right;
 }
 
 .about-buttons-container {
@@ -258,8 +257,17 @@ a {
 }
 
 .skill-list-div ul li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
   text-transform: uppercase;
+}
+
+#sap-skill {
+  position: relative;
+  bottom: 6px;
+  right: 10px;
 }
 
 /* PORTFOLIO */
