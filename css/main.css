@@ -45,8 +45,9 @@ textarea {
 h1 {
   color: #000;
   font-family: "Righteous", cursive;
-  font-size: 45px;
+  font-size: 55px;
   font-weight: 800;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
   -webkit-text-stroke: 0.07px #fff;
@@ -55,7 +56,7 @@ h1 {
 h1 span {
   color: #8d0622;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -63,7 +64,7 @@ h1 span {
 h2 {
   color: #000;
   font-family: "Righteous", cursive;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   text-align: center;
   text-shadow: 1px 1px 1px #fff;
@@ -207,7 +208,7 @@ a {
 
 #profile-pic {
   height: 100%;
-  top: 85px;
+  margin-top: 60px;
   width: 95%;
 }
 
@@ -310,7 +311,7 @@ a {
 }
 
 .links-container {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .links-container .project-link {
@@ -321,7 +322,6 @@ a {
   );
   color: #fff;
   padding: 6px 10px;
-  margin: 0 5px;
 }
 
 /* -------  EDUCATION SECTION ---------*/
@@ -476,6 +476,7 @@ a {
     flex-direction: column;
     justify-content: center;
   }
+
   .projects-container {
     max-width: 70%;
   }
@@ -484,23 +485,19 @@ a {
   .main-experiences {
     align-items: center;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: center;
   }
 
-  /* .education-div {
-    padding: 50px 100px;
+  #experience {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .experience-div {
-    padding: 50px 100px;
-  } */
-
-  /* #experience {
-    max-width: 90%;
+    width: 70%;
+    padding: 50px 150px;
   }
-
-  #education {
-    max-width: 90%;
-  } */
 }
