@@ -66,8 +66,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  text-shadow: 1px 1px 1px #000;
-  -webkit-text-stroke: 0.07px #fff;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 h4 {
@@ -199,17 +198,14 @@ a {
 /* ABOUT SECTION */
 #about {
   border-bottom: 1.5px solid #8d0622;
-  position: relative;
 }
 
-#profile-pic {
+/* #profile-pic {
   height: 100%;
-  opacity: 0.2;
-  position: absolute;
-  top: 5px;
-  width: 100%;
-  z-index: -1;
-}
+  top: 85px;
+  width: 300px;
+  float: right;
+} */
 
 .about-buttons-container {
   align-items: center;
@@ -272,8 +268,8 @@ a {
 
 .card {
   background-color: #fff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-  margin: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  margin: 20px 10px;
   overflow: hidden;
   width: 300px;
 }
@@ -307,7 +303,6 @@ a {
     rgba(0, 0, 0, 0.93) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 5px 6px;
   text-align: center;
@@ -429,12 +424,15 @@ a {
   background: #8d0622;
   bottom: 0;
   box-shadow: 2px 0px 0px 2px rgba(0, 0, 0, 0.6);
-  color: #fff;
   font-style: italic;
   padding: 5px;
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+#footer p {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -477,15 +475,8 @@ a {
 
   /* SKILLS SECTION */
   #skills {
-    border: none;
-    /* position: absolute;
-    right: 20px;
-    top: 39%;
-    width: 29%;
-    border-top: 1.5px solid #8d0622; */
+    border-bottom: 1.5px solid #8d0622;
   }
-
-  /* PORTFOLIO SECTION */
 
   /* EXPERIENCES SECTION */
   .main-experiences {
