@@ -101,13 +101,13 @@ a {
                                  Main Layout - Mobile
   -----------------------------------------------------------------------------*/
 #main-container {
-  margin: 0 20px;
+  /* margin: 0 20px; */
   padding: 20px 0;
   z-index: 0;
 }
 
 .section-container {
-  padding: 60px 0;
+  padding: 60px 30px;
 }
 
 /* HEADER */
@@ -199,7 +199,6 @@ a {
 
 /* ABOUT SECTION */
 #about {
-  border-bottom: 1.5px solid #8d0622;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,7 +225,7 @@ a {
     rgba(0, 0, 0, 0.93) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -246,7 +245,7 @@ a {
 
 /* SKILLS SECTION */
 #skills {
-  border-bottom: 1.5px solid #8d0622;
+  background-color: #ffedb9;
 }
 
 .skill-list-div ul {
@@ -281,7 +280,7 @@ a {
 
 .card {
   background-color: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.8);
   margin: 20px 10px;
   overflow: hidden;
   width: 350px;
@@ -325,6 +324,10 @@ a {
 }
 
 /* -------  EDUCATION SECTION ---------*/
+#education {
+  background-color: #ffedb9;
+}
+
 .experiences-icon {
   padding-right: 5px;
 }
@@ -406,12 +409,16 @@ a {
 }
 
 /* -------  CONTACTS SECTION ---------*/
+#contact {
+  background-color: #ffedb9;
+}
+
 .contacts-container {
   align-items: center;
-  border-top: 1.5px solid #8d0622;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .contacts ul {
@@ -478,6 +485,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #education {
+    width: 100%;
   }
 
   #experience {
