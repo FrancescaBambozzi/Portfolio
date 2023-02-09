@@ -74,6 +74,11 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+}
+
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -266,7 +271,6 @@ a {
 .card {
   margin: 10px;
   background-color: #fff;
-  border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 300px;
@@ -287,49 +291,22 @@ a {
   min-height: 250px;
 }
 
-.tag {
-  background: #cccccc;
-  border-radius: 50px;
-  font-size: 12px;
-  margin: 0;
-  color: #fff;
-  padding: 2px 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.tag-teal {
-  background-color: #47bcd4;
-}
-
-.tag-purple {
-  background-color: #5e76bf;
-}
-
-.tag-pink {
-  background-color: #cd5b9f;
-}
-
 .card-body p {
   font-size: 13px;
   margin: 0 0 40px;
 }
-.user {
-  display: flex;
-  margin-top: auto;
-}
 
-.user img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-.user-info h5 {
-  margin: 0;
-}
-.user-info small {
-  color: #545d7a;
+.links-container a {
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 6px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* -------  EDUCATION SECTION ---------*/
