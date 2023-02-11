@@ -463,20 +463,28 @@ a {
    /* ========================================================================== */
 /* Extra small devices  */
 @media only screen and (max-width: 405px) {
+  /* PORTFOLIO */
   .links-container {
-    margin: 0;
     display: flex;
+    margin: 0;
     text-align: center;
   }
 
   .links-container .project-link {
     margin: 3px;
   }
+
+  /* CONTACTS */
+  .contacts-container ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Desktop and Tablets */
 @media only screen and (min-width: 768px) {
-  /* ABOUT SECTION */
+  /* ABOUT */
   #about {
     flex-flow: row-reverse;
     justify-content: space-evenly;
@@ -498,7 +506,7 @@ a {
     justify-content: center;
   }
 
-  /* EXPERIENCES SECTION */
+  /* EXPERIENCES */
   .main-experiences {
     align-items: center;
     display: flex;
