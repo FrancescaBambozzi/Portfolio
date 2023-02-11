@@ -209,7 +209,7 @@ a {
 #profile-pic {
   height: 100%;
   margin-top: 60px;
-  width: 350px;
+  width: 250px;
 }
 
 .about-buttons-container {
@@ -461,6 +461,20 @@ a {
 /* ==========================================================================
                               MEDIA QUERIES STYLE
    /* ========================================================================== */
+/* Extra small devices  */
+@media only screen and (max-width: 405px) {
+  .links-container {
+    margin: 0;
+    display: flex;
+    text-align: center;
+  }
+
+  .links-container .project-link {
+    margin: 3px;
+  }
+}
+
+/* Desktop and Tablets */
 @media only screen and (min-width: 768px) {
   /* ABOUT SECTION */
   #about {
@@ -470,6 +484,10 @@ a {
 
   #about .intro-container {
     max-width: 760px;
+  }
+
+  #profile-pic {
+    width: 350px;
   }
 
   /* PORTFOLIO */
