@@ -235,13 +235,11 @@ a {
 }
 
 .button {
-  background: linear-gradient(
-    109.6deg,
-    rgba(0, 0, 0, 0.93) 11.2%,
-    rgb(63, 61, 61) 78.9%
-  );
+  background: lightgrey;
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.8);
-  color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 400;
   padding: 10px;
   text-align: center;
   width: 250px;
@@ -329,13 +327,11 @@ a {
 }
 
 .project-link {
-  background: linear-gradient(
-    109.6deg,
-    rgba(0, 0, 0, 0.93) 11.2%,
-    rgb(63, 61, 61) 78.9%
-  );
-  color: #fff;
+  background: lightgrey;
+  border: 1px solid #000;
+  color: #000;
   padding: 6px 10px;
+  font-weight: 400;
 }
 
 /* -------  EDUCATION SECTION ---------*/
