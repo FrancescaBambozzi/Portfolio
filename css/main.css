@@ -382,22 +382,20 @@ a {
 .experience-div {
   display: block;
   padding: 15px;
+  border-bottom: 1.5px solid #8d0622;
 }
 
 #first {
-  border-bottom: 1.5px solid #8d0622;
-  border-left: 1.5px solid #8d0622;
   border-top: 1.5px solid #8d0622;
 }
 
 #second,
-#fourth {
-  border-bottom: 1.5px solid #8d0622;
+#fourth,  
+#sixth {
   border-right: 1.5px solid #8d0622;
 }
 
-#third {
-  border-bottom: 1.5px solid #8d0622;
+#third, #first, #fifth {
   border-left: 1.5px solid #8d0622;
 }
 
