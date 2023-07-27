@@ -337,7 +337,7 @@ a {
 
 /* -------  EDUCATION SECTION ---------*/
 #education {
-  background-color: #ffedb9;
+  background-color: #fff;
 }
 
 .experiences-icon {
@@ -371,6 +371,27 @@ a {
 
 .work-points {
   list-style: disc;
+}
+
+/* -------  CERTIFICATION SECTION ------- */
+#certifications {
+  background-color: #ffedb9;
+  width: 100%;
+}
+.certifications-list-div ul li {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.freeCode-logo {
+  padding-bottom: 15px;
+}
+
+.certification-link {
+  color: #000;
 }
 
 /* -------  EXPERIENCE SECTION ---------*/
