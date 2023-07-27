@@ -224,8 +224,7 @@ a {
   height: 100%;
   margin-top: 60px;
   width: 100%;
-  border-radius: 100px;
-  box-shadow: 2px 4px 0px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
 }
 
 .about-buttons-container {
@@ -543,6 +542,6 @@ a {
   }
 
   .experience-div {
-    width: 90%;
+    width: 60%;
   }
 }
