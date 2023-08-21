@@ -382,12 +382,13 @@ a {
   background-color: #ffedb9;
   width: 100%;
 }
+
 .certifications-list-div ul li {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  padding: 0;
+  padding-top: 20px;
 }
 
 .freeCode-logo {
