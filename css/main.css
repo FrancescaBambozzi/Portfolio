@@ -278,6 +278,10 @@ a {
   text-transform: uppercase;
 }
 
+.skill-list-div ul li:hover {
+  transform: scale(1.1);
+}
+
 #sap-skill {
   position: relative;
   bottom: 6px;
