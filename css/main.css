@@ -339,6 +339,11 @@ a {
   font-weight: 400;
 }
 
+.project-link:hover {
+  background-color: #ffedb9;
+  color: #8d0622;
+}
+
 /* -------  EDUCATION SECTION ---------*/
 #education {
   background-color: #fff;
